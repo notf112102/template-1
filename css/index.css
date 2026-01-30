@@ -41,6 +41,9 @@
 .special-header{
     text-align: center;
     padding-bottom: 100px;
+    width: fit-content;
+    margin: 0 auto; 
+    overflow-x: hidden;
 }
 .special-header h1{
     margin: 0;
@@ -199,6 +202,9 @@ header .container nav ul li a:hover{
 section{
     height: calc(100vh - 43px);
     position: relative;
+    background-image: url(../images/header.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 section video{
     width: 100%;
@@ -270,6 +276,7 @@ section .txt p{
 .services{
     padding-top: 100px;
     padding-bottom: 100px;
+    overflow-x: hidden;
 }
 .services .container{
     display: grid;
@@ -386,6 +393,7 @@ section .txt p{
 .about{
     padding-top: 100px;
     padding-bottom: 100px;
+    overflow-x: hidden;
 }
 .about .container{
     display: grid;
@@ -522,7 +530,7 @@ footer span span{
     animation: container-active 1s forwards;
 }
 .content-active{
-    animation:content-active 1s forwards; 
+    animation:content-active 1s forwards;
 }
 .content-noactive{
     animation: content-noactive 1s forwards;
@@ -532,20 +540,6 @@ footer span span{
 }
 .image-noactive{
     animation: image-noactive 1s forwards;
-}
-@media(max-width:458px){
-    .content-active{
-        animation:content-active-458 1s forwards; 
-    } 
-    .content-noactive{
-        animation: content-noactive-458 1s forwards;
-    }
-    .image-active{
-        animation: image-active-458 1s forwards;
-    }
-    .image-noactive{
-        animation: image-noactive-458 1s forwards;
-    }
 }
 @keyframes container-active{
     from{
@@ -607,38 +601,4 @@ footer span span{
         opacity: 0;
     }
 }
-/* start animation responsive 458px */
-@keyframes content-active-458{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@keyframes content-noactive-458{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
-@keyframes image-active-458 {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@keyframes image-noactive-458 {
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
-/* end animation responsive 458px */
 /* end animation */
